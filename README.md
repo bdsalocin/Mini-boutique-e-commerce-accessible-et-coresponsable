@@ -3,7 +3,7 @@
 principe de boutique en ligne permettant d'acheter des produits filtrables par catégorie, et accessibles via une barre de recherche, avec panier dynamique, formulaire de livraison et simulation de paiement.
 appli optimisée sur l'accessibilitée, l'eco responsabilité, développée en mobile first.
 
-l'utilisateur
+l'utilisateur :
 -pourra consulter les produits, ajouter une quantité d'achat pour chaque produit, l'ajouter au panier, le supprimer de son panier, visualiser sa derniere commande.
 -quitter et revenir sur l'appli tout en gardant son panier actif.
 -il devra saisir ses informations de livraison et de paiement, confirmer la commande afin de pouvoir acheter le produit.
