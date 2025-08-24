@@ -19,7 +19,9 @@ let myProducts = [];
 
 const fetchMyProducts = async () => {
   try {
-    const response = await fetch("/assets/data/products.json");
+    const response = await fetch(
+      "/Mini-boutique-e-commerce-accessible-et-coresponsable/assets/data/products.json"
+    );
     if (!response.ok) {
       throw new Error(`Erreur HTTP: ${response.status}`);
     }
