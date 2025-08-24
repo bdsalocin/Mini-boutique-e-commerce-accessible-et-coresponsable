@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "name": "Clavier mécanique",
+    "category": "Informatique",
+    "price": 59.9,
+    "stock": 23,
+    "rating": 4.5,
+    "image": "https://placehold.co/200x200?text=Clavier",
+    "description": "Clavier mécanique compact avec switchs bleus."
+  },
+  {
+    "id": 2,
+    "name": "Souris sans fil",
+    "category": "Informatique",
+    "price": 29.9,
+    "stock": 45,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Souris",
+    "description": "Souris ergonomique sans fil avec capteur optique."
+  },
+  {
+    "id": 3,
+    "name": "Écran 24 pouces",
+    "category": "Informatique",
+    "price": 149.0,
+    "stock": 12,
+    "rating": 4.6,
+    "image": "https://placehold.co/200x200?text=Ecran",
+    "description": "Écran Full HD 24 pouces avec dalle IPS."
+  },
+  {
+    "id": 4,
+    "name": "Casque audio",
+    "category": "Multimédia",
+    "price": 79.9,
+    "stock": 8,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Casque",
+    "description": "Casque circum-aural avec réduction de bruit."
+  },
+  {
+    "id": 5,
+    "name": "Enceinte Bluetooth",
+    "category": "Multimédia",
+    "price": 39.9,
+    "stock": 19,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=Enceinte",
+    "description": "Enceinte portable Bluetooth autonomie 12h."
+  },
+  {
+    "id": 6,
+    "name": "Smartphone 128Go",
+    "category": "Téléphonie",
+    "price": 399.0,
+    "stock": 14,
+    "rating": 4.4,
+    "image": "https://placehold.co/200x200?text=Smartphone",
+    "description": "Smartphone écran 6,1 pouces avec 128 Go."
+  },
+  {
+    "id": 7,
+    "name": "Tablette 10 pouces",
+    "category": "Téléphonie",
+    "price": 249.0,
+    "stock": 17,
+    "rating": 4.0,
+    "image": "https://placehold.co/200x200?text=Tablette",
+    "description": "Tablette tactile 10 pouces Android."
+  },
+  {
+    "id": 8,
+    "name": "Ordinateur portable",
+    "category": "Informatique",
+    "price": 799.0,
+    "stock": 10,
+    "rating": 4.5,
+    "image": "https://placehold.co/200x200?text=Laptop",
+    "description": "PC portable 15 pouces avec SSD 512 Go."
+  },
+  {
+    "id": 9,
+    "name": "Disque dur externe 1To",
+    "category": "Stockage",
+    "price": 59.0,
+    "stock": 30,
+    "rating": 4.4,
+    "image": "https://placehold.co/200x200?text=HDD",
+    "description": "Disque dur externe USB 3.0 1 To."
+  },
+  {
+    "id": 10,
+    "name": "Clé USB 64Go",
+    "category": "Stockage",
+    "price": 15.9,
+    "stock": 50,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=USB",
+    "description": "Clé USB 64 Go haute vitesse."
+  },
+  {
+    "id": 11,
+    "name": "Appareil photo numérique",
+    "category": "Multimédia",
+    "price": 299.0,
+    "stock": 7,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Camera",
+    "description": "Appareil photo compact 20 MP."
+  },
+  {
+    "id": 12,
+    "name": "Trépied appareil photo",
+    "category": "Accessoires",
+    "price": 39.9,
+    "stock": 21,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=Trepied",
+    "description": "Trépied aluminium hauteur max 1,5 m."
+  },
+  {
+    "id": 13,
+    "name": "Sac à dos PC",
+    "category": "Accessoires",
+    "price": 49.9,
+    "stock": 25,
+    "rating": 4.4,
+    "image": "https://placehold.co/200x200?text=Sac",
+    "description": "Sac à dos pour ordinateur portable 15 pouces."
+  },
+  {
+    "id": 14,
+    "name": "Imprimante multifonction",
+    "category": "Informatique",
+    "price": 129.0,
+    "stock": 11,
+    "rating": 4.0,
+    "image": "https://placehold.co/200x200?text=Imprimante",
+    "description": "Imprimante jet d’encre 3-en-1 WiFi."
+  },
+  {
+    "id": 15,
+    "name": "Scanner portable",
+    "category": "Informatique",
+    "price": 89.0,
+    "stock": 9,
+    "rating": 3.9,
+    "image": "https://placehold.co/200x200?text=Scanner",
+    "description": "Scanner portable A4 USB."
+  },
+  {
+    "id": 16,
+    "name": "Montre connectée",
+    "category": "Téléphonie",
+    "price": 199.0,
+    "stock": 13,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Montre",
+    "description": "Montre connectée avec suivi sportif."
+  },
+  {
+    "id": 17,
+    "name": "Chargeur rapide USB-C",
+    "category": "Accessoires",
+    "price": 24.9,
+    "stock": 40,
+    "rating": 4.5,
+    "image": "https://placehold.co/200x200?text=Chargeur",
+    "description": "Chargeur mural 30W USB-C Power Delivery."
+  },
+  {
+    "id": 18,
+    "name": "Batterie externe 10.000mAh",
+    "category": "Accessoires",
+    "price": 34.9,
+    "stock": 28,
+    "rating": 4.4,
+    "image": "https://placehold.co/200x200?text=Powerbank",
+    "description": "Batterie externe compacte 10.000 mAh."
+  },
+  {
+    "id": 19,
+    "name": "Câble USB-C 1m",
+    "category": "Accessoires",
+    "price": 9.9,
+    "stock": 60,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Cable",
+    "description": "Câble USB-C vers USB-A 1 mètre."
+  },
+  {
+    "id": 20,
+    "name": "Lampe de bureau LED",
+    "category": "Maison",
+    "price": 29.9,
+    "stock": 16,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Lampe",
+    "description": "Lampe de bureau LED avec intensité réglable."
+  },
+  {
+    "id": 21,
+    "name": "Ventilateur sur pied",
+    "category": "Maison",
+    "price": 59.0,
+    "stock": 12,
+    "rating": 4.0,
+    "image": "https://placehold.co/200x200?text=Ventilateur",
+    "description": "Ventilateur oscillant sur pied 40 cm."
+  },
+  {
+    "id": 22,
+    "name": "Aspirateur sans sac",
+    "category": "Maison",
+    "price": 149.0,
+    "stock": 9,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Aspirateur",
+    "description": "Aspirateur cyclonique sans sac."
+  },
+  {
+    "id": 23,
+    "name": "Machine à café",
+    "category": "Cuisine",
+    "price": 89.0,
+    "stock": 15,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Cafe",
+    "description": "Machine expresso compacte."
+  },
+  {
+    "id": 24,
+    "name": "Bouilloire électrique",
+    "category": "Cuisine",
+    "price": 34.9,
+    "stock": 18,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=Bouilloire",
+    "description": "Bouilloire 1,7 L avec arrêt automatique."
+  },
+  {
+    "id": 25,
+    "name": "Grille-pain 2 fentes",
+    "category": "Cuisine",
+    "price": 29.9,
+    "stock": 20,
+    "rating": 4.0,
+    "image": "https://placehold.co/200x200?text=Grillepain",
+    "description": "Grille-pain inox 2 fentes."
+  },
+  {
+    "id": 26,
+    "name": "Mixeur plongeant",
+    "category": "Cuisine",
+    "price": 39.9,
+    "stock": 14,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Mixeur",
+    "description": "Mixeur plongeant 600W avec accessoires."
+  },
+  {
+    "id": 27,
+    "name": "Four micro-ondes",
+    "category": "Cuisine",
+    "price": 99.0,
+    "stock": 10,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=Microondes",
+    "description": "Four micro-ondes 20 L avec grill."
+  },
+  {
+    "id": 28,
+    "name": "Réfrigérateur 200L",
+    "category": "Cuisine",
+    "price": 349.0,
+    "stock": 6,
+    "rating": 4.4,
+    "image": "https://placehold.co/200x200?text=Frigo",
+    "description": "Réfrigérateur pose libre 200 L."
+  },
+  {
+    "id": 29,
+    "name": "Chaise de bureau",
+    "category": "Maison",
+    "price": 129.0,
+    "stock": 22,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Chaise",
+    "description": "Chaise de bureau ergonomique réglable."
+  },
+  {
+    "id": 30,
+    "name": "Bureau informatique",
+    "category": "Maison",
+    "price": 189.0,
+    "stock": 8,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Bureau",
+    "description": "Bureau en bois 120 cm avec tiroirs."
+  },
+  {
+    "id": 31,
+    "name": "Table basse",
+    "category": "Maison",
+    "price": 79.0,
+    "stock": 12,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=Table",
+    "description": "Table basse design en bois."
+  },
+  {
+    "id": 32,
+    "name": "Canapé 3 places",
+    "category": "Maison",
+    "price": 499.0,
+    "stock": 5,
+    "rating": 4.4,
+    "image": "https://placehold.co/200x200?text=Canape",
+    "description": "Canapé tissu 3 places avec coussins."
+  },
+  {
+    "id": 33,
+    "name": "Lit double 140x190",
+    "category": "Maison",
+    "price": 299.0,
+    "stock": 7,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Lit",
+    "description": "Lit double avec sommier inclus."
+  },
+  {
+    "id": 34,
+    "name": "Matelas mousse 140x190",
+    "category": "Maison",
+    "price": 249.0,
+    "stock": 9,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Matelas",
+    "description": "Matelas confort en mousse HR."
+  },
+  {
+    "id": 35,
+    "name": "Armoire penderie",
+    "category": "Maison",
+    "price": 399.0,
+    "stock": 4,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=Armoire",
+    "description": "Armoire 2 portes avec penderie et étagères."
+  },
+  {
+    "id": 36,
+    "name": "Vélo VTT 26 pouces",
+    "category": "Sport",
+    "price": 299.0,
+    "stock": 6,
+    "rating": 4.4,
+    "image": "https://placehold.co/200x200?text=Velo",
+    "description": "VTT 26 pouces aluminium 21 vitesses."
+  },
+  {
+    "id": 37,
+    "name": "Tapis de yoga",
+    "category": "Sport",
+    "price": 29.9,
+    "stock": 35,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Tapis",
+    "description": "Tapis de yoga antidérapant 6 mm."
+  },
+  {
+    "id": 38,
+    "name": "Chaussures de running",
+    "category": "Sport",
+    "price": 79.9,
+    "stock": 18,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Running",
+    "description": "Chaussures de course légères et respirantes."
+  },
+  {
+    "id": 39,
+    "name": "Ballon de football",
+    "category": "Sport",
+    "price": 24.9,
+    "stock": 28,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=Football",
+    "description": "Ballon de football taille 5."
+  },
+  {
+    "id": 40,
+    "name": "Raquette de tennis",
+    "category": "Sport",
+    "price": 99.0,
+    "stock": 11,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Tennis",
+    "description": "Raquette de tennis graphite adulte."
+  },
+  {
+    "id": 41,
+    "name": "Lunettes de soleil",
+    "category": "Mode",
+    "price": 49.9,
+    "stock": 30,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Lunettes",
+    "description": "Lunettes de soleil UV400."
+  },
+  {
+    "id": 42,
+    "name": "Montre analogique",
+    "category": "Mode",
+    "price": 89.0,
+    "stock": 14,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=MontreAnalogique",
+    "description": "Montre classique bracelet cuir."
+  },
+  {
+    "id": 43,
+    "name": "T-shirt coton",
+    "category": "Mode",
+    "price": 19.9,
+    "stock": 50,
+    "rating": 4.0,
+    "image": "https://placehold.co/200x200?text=Tshirt",
+    "description": "T-shirt en coton 100% bio."
+  },
+  {
+    "id": 44,
+    "name": "Jeans slim",
+    "category": "Mode",
+    "price": 49.9,
+    "stock": 22,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=Jeans",
+    "description": "Jeans slim fit coupe moderne."
+  },
+  {
+    "id": 45,
+    "name": "Veste légère",
+    "category": "Mode",
+    "price": 79.9,
+    "stock": 15,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Veste",
+    "description": "Veste légère pour mi-saison."
+  },
+  {
+    "id": 46,
+    "name": "Chaussures de ville",
+    "category": "Mode",
+    "price": 99.0,
+    "stock": 9,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Chaussures",
+    "description": "Chaussures en cuir élégantes."
+  },
+  {
+    "id": 47,
+    "name": "Sac à main",
+    "category": "Mode",
+    "price": 129.0,
+    "stock": 10,
+    "rating": 4.4,
+    "image": "https://placehold.co/200x200?text=SacMain",
+    "description": "Sac à main cuir synthétique."
+  },
+  {
+    "id": 48,
+    "name": "Casquette coton",
+    "category": "Mode",
+    "price": 19.9,
+    "stock": 27,
+    "rating": 4.1,
+    "image": "https://placehold.co/200x200?text=Casquette",
+    "description": "Casquette ajustable 100% coton."
+  },
+  {
+    "id": 49,
+    "name": "Écharpe laine",
+    "category": "Mode",
+    "price": 39.9,
+    "stock": 18,
+    "rating": 4.2,
+    "image": "https://placehold.co/200x200?text=Echarpe",
+    "description": "Écharpe chaude en laine."
+  },
+  {
+    "id": 50,
+    "name": "Ceinture cuir",
+    "category": "Mode",
+    "price": 29.9,
+    "stock": 24,
+    "rating": 4.3,
+    "image": "https://placehold.co/200x200?text=Ceinture",
+    "description": "Ceinture en cuir véritable avec boucle métal."
+  }
+]
