@@ -63,12 +63,14 @@
       </section>
 
       <section id="cart">
-        <img
-          src="assets/icon/accueil.png"
-          alt="retour à la page d'accueuil"
-          height="40"
-          width="40"
-        />
+        <a href="index.html">
+          <img
+            src="assets/icon/accueil.png"
+            alt="retour à la page d'accueuil"
+            height="40"
+            width="40"
+          />
+        </a>
 
         <a class="panier" href="cart.html" aria-label="redirection panier"
           ><i class="fa-solid fa-cart-shopping" aria-label="panier d'achat"></i
@@ -83,19 +85,17 @@
       >
         <img
           class="imageProduct"
-          src="assets/icon/eco_logistique.png"
+          src=""
           alt="photo du produit"
           width="80%"
           height="40%"
         />
         <div class="mediaqueries">
           <div class="détails">
-            <p class="descriptionProduit">clavier mecanique</p>
-            <p class="descriptionProduit">
-              clavier mécanique compact avec switchs bleues
-            </p>
-            <p class="descriptionProduit">prix : 39,99e Stock : 11</p>
-            <p class="descriptionProduit">avis : 4.5/5</p>
+            <p class="descriptionProduit" id="titreProduit"></p>
+            <p class="descriptionProduit" id="descriptionProduit"></p>
+            <p class="descriptionProduit" id="prixStock"></p>
+            <p class="descriptionProduit" id="avis"></p>
           </div>
 
           <div class="quantité">
