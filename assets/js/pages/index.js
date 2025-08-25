@@ -1,4 +1,4 @@
-import { fetchProductDetails } from "../shared/api.js";
+import { fetchAllProducts } from "../shared/api.js";
 import { addToCart, updateCartCount } from "../shared/state.js";
 
 // ------------------------------------------
@@ -32,12 +32,6 @@ const filters = {
   searchTerm: "",
   category: "",
 };
-
-// ------------------------------------------
-// On récupère les produits depuis le fichier JSON
-// ------------------------------------------
-
-fetchProductDetails();
 
 // ------------------------------------------
 
@@ -206,8 +200,6 @@ const filterAndListProducts = () => {
 };
 
 // ------------------------------------------
-
-// ------------------------------------------
 // On initialise les événements
 // ------------------------------------------
 
@@ -228,8 +220,6 @@ const setupEventListeners = () => {
     filters.searchTerm = e.target.value;
     filterAndListProducts();
   });
-
-  fillCategories(myProducts);
 };
 
 // ------------------------------------------
@@ -239,12 +229,12 @@ const setupEventListeners = () => {
 // ------------------------------------------
 
 const initializePage = async () => {
-  myProducts = await fetchMyProducts();
+  myProducts = await fetchAllProducts();
+  fillCategories(myProducts);
   setupEventListeners();
   filterAndListProducts();
   updateCartCount();
 };
-
 // ------------------------------------------
 
 // ------------------------------------------
