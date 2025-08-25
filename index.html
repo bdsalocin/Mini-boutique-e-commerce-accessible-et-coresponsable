@@ -3,9 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <meta
+      name="description"
+      content="Lupini : votre boutique d'objets électroniques. Découvrez notre sélection d'articles de qualité à des prix imbattables."
+    />
+
+    <meta
+      name="keywords"
+      content="Lupini, électronique, boutique, gadgets, high-tech, smartphones, casques, ordinateur"
+    />
+
+    <meta name="author" content="Lupini Team" />
+
+    <meta property="og:title" content="Lupini - Objets électroniques" />
+
+    <meta
+      property="og:description"
+      content="Découvrez le meilleur de la technologie sur Lupini."
+    />
+
+    <meta property="og:image" content="./assets/icon/boite-de-livraison.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Lupini - Objets électroniques</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/icon/boite-de-livraison.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <section id="logo-icon-header">
+        <h1>Lupini</h1>
+        <img
+          src="./assets/icon/boite-de-livraison.png"
+          alt="logo du site boite de livraison"
+          width="35"
+          height="35"
+        />
+      </section>
+      <section class="search-section">
+        <div class="search-bar-container">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Rechercher par nom du produit..."
+            aria-label="Rechercher par nom du produit"
+          />
+        </div>
+        <section id="category-container">
+          <button id="filter-button">
+            <i class="fa-solid fa-sliders"></i>
+          </button>
+          <section id="category-list" class="list-menu"></section>
+        </section>
+      </section>
+      <section id="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </section>
+    </header>
+
+    <main id="main-index">
+      <section id="products-container" class="product-array"></section>
+    </main>
+
+    <footer>
+      <section id="logo-icon-footer">
+        <h1>Lupini</h1>
+        <img
+          src="./assets/icon/boite-de-livraison.png"
+          alt="logo du site boite de livraison"
+          width="35"
+          height="35"
+        />
+      </section>
+      <p>Copyright @2025</p>
+    </footer>
+
+    <script type="module" src="./assets/js/pages/index.js"></script>
   </body>
 </html>
