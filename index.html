@@ -4,35 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Description pour les moteurs de recherche -->
     <meta
       name="description"
       content="Lupini : votre boutique d'objets électroniques. Découvrez notre sélection d'articles de qualité à des prix imbattables."
     />
-
-    <!-- Liste de mots clé liés au contenu de la page -->
 
     <meta
       name="keywords"
       content="Lupini, électronique, boutique, gadgets, high-tech, smartphones, casques, ordinateur"
     />
 
-    <!-- Auteur du site -->
-
     <meta name="author" content="Lupini Team" />
 
-    <!-- Détail du titre de la page lorsque partagé sur les réseaux-->
-
     <meta property="og:title" content="Lupini - Objets électroniques" />
-
-    <!-- Fournit une description lorsque partagé sur les réseaux sociaux-->
 
     <meta
       property="og:description"
       content="Découvrez le meilleur de la technologie sur Lupini."
     />
 
-    <!-- Open Graph, image affichée lorsque le site est partagé sur les réseaux sociaux -->
     <meta property="og:image" content="./assets/icon/boite-de-livraison.png" />
     <link
       rel="stylesheet"
@@ -62,12 +52,14 @@
         />
       </section>
       <section class="search-section">
-        <input
-          type="text"
-          id="search-bar"
-          placeholder="Rechercher un produit..."
-          aria-label="Rechercher un produit"
-        />
+        <div class="search-bar-container">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Rechercher par nom du produit..."
+            aria-label="Rechercher par nom du produit"
+          />
+        </div>
         <section id="category-container">
           <button id="filter-button">
             <i class="fa-solid fa-sliders"></i>
@@ -81,7 +73,6 @@
     </header>
 
     <main id="main-index">
-      <h2>Tous nos produits</h2>
       <section id="products-container" class="product-array"></section>
     </main>
 
