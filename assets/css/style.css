@@ -1,0 +1,189 @@
+/* Couleur de base */
+:root {
+  --couleur-primaire: #a5bbd4;
+  --couleur-secondaire: #black;
+  --couleur-tertiaire: #white;
+}
+
+/* Paramètre de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  background-color: var(--couleur-primaire);
+  height: 120px;
+  width: 100%;
+}
+
+.search-section {
+  display: flex;
+}
+
+main {
+  flex-grow: 1;
+  padding: 50px;
+}
+
+/* Menu déroulant */
+
+#list-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.list-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 99999;
+}
+
+.list-menu.visible {
+  display: block;
+}
+
+.list-option {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.list-option:hover {
+  background-color: grey;
+}
+
+/* ----------------------------------------- */
+/* Style pour les contenaires des cartes */
+/* ----------------------------------------- */
+
+.product-array {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--couleur-primaire);
+  text-align: center;
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+
+
+/*--------------------- PAGE CHECKOUT ------------------ */
+
+body{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: aqua;
+  width: 100%;
+}
+
+
+.encadrementInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a5bbd4;
+  /* height: 30vh; */
+  width: 60%;
+  border-radius: 20px;
+}
+
+.zoneInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh; 
+  width: 100%;
+  padding: 5px;
+}
+
+
+/* toutes les zones de gauche avec les input pour les espacer  */
+.zoneLastname {
+  padding: 10px;
+}
+
+.zoneAddress {
+  padding: 10px;
+}
+
+.zoneTelephone {
+  padding: 10px;
+}
+
+.zoneDpd {
+  padding: 10px;
+}
+
+.zoneLaposte {
+  padding: 10px;
+}
+
+/* Parametre des reglages des inputs du gauche  */
+.inputName {
+  border-radius: 10px;
+}
+
+.inputLastName {
+  border-radius: 10px;
+}
+
+.inputAddress {
+  border-radius: 10px;
+}
+
+.inputTelephone {
+  border-radius: 10px;
+}
+
+.inputEmail {
+  border-radius: 10px;
+}
+
+
+/* Zone de droite pour les modes de livraison  */
+.zoneModeDeLivraison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh; 
+  width: 100%;
+  padding: 5px;
+}
+
+.zoneEcolo {}
