@@ -1,36 +1,36 @@
+import { fetchAllProducts } from "../shared/api.js";
+import { addToCart, updateCartCount } from "../shared/state.js";
+
 // ------------------------------------------
-//  Déclaration des fonctions pour afficher les contenaires des produits et la barre de recherche
+// Déclaration des fonctions pour afficher les contenaires des produits et la barre de recherche
 // ------------------------------------------
 
 const productsContainer = document.getElementById("products-container");
 const searchBar = document.getElementById("search-bar");
+const filterButton = document.getElementById("filter-button");
+const categoryList = document.getElementById("category-list");
 
 // ------------------------------------------
 
 // ------------------------------------------
-// Mon tableau de produits
+// On récupère l'icône du panier et on crée une balise pour le nombre d'articles
+// ------------------------------------------
+
+const cartIcon = document.getElementById("cart");
+const cartCountSpan = document.createElement("span");
+cartCountSpan.classList.add("cart-count");
+cartIcon.appendChild(cartCountSpan);
+
+// ------------------------------------------
+
+// ------------------------------------------
+// Mon tableau de produits et mon objet de filtres
 // ------------------------------------------
 
 let myProducts = [];
-
-// ------------------------------------------
-// On récupère les produits depuis le fichier JSON
-// ------------------------------------------
-
-const fetchMyProducts = async () => {
-  try {
-    const response = await fetch(
-      "/Mini-boutique-e-commerce-accessible-et-coresponsable/assets/data/products.json"
-    );
-    if (!response.ok) {
-      throw new Error(`Erreur HTTP: ${response.status}`);
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("La récupération des produits a échoué:", error);
-    return [];
-  }
+const filters = {
+  searchTerm: "",
+  category: "",
 };
 
 // ------------------------------------------
@@ -93,7 +93,7 @@ const createProductCard = (product) => {
   // ------------------------------------------
 
   // ------------------------------------------
-  // On applique le style "stock faible" si le stock d´article < 10
+  // On applique le style low stock si le stock d´article < 10
   // ------------------------------------------
 
   product.stock < 10 && stockSpan.classList.add("low-stock");
@@ -108,7 +108,9 @@ const createProductCard = (product) => {
   // ------------------------------------------
 
   const buttonsBottom = document.createElement("div");
-  buttonsBottom.classList.add("buttons-bottom");
+  buttonsBottom.classList.add("button-group");
+
+  // ------------------------------------------
 
   // ------------------------------------------
   // On crée le bouton voir produit
@@ -128,7 +130,8 @@ const createProductCard = (product) => {
   const addButton = document.createElement("button");
   addButton.textContent = "Ajouter au panier";
   addButton.onclick = () => {
-    // Logique pour ajouter au panier ------------------------------------------------
+    addToCart(product, 1);
+    updateCartCount();
   };
 
   buttonsBottom.append(viewButton, addButton);
@@ -152,14 +155,14 @@ const listProducts = (productsToDisplay) => {
 // On rempli dynamiquement les catégories
 // ------------------------------------------
 
-const fillCategories = (products, categoryList) => {
+const fillCategories = (products) => {
   const allCategories = products.map((product) => product.category);
   const uniqueCategories = new Set(allCategories);
 
   const allButton = document.createElement("button");
   allButton.classList.add("list-option");
   allButton.dataset.category = "";
-  allButton.textContent = "Toute les catégories";
+  allButton.textContent = "Toutes les catégories";
   categoryList.appendChild(allButton);
 
   uniqueCategories.forEach((category) => {
@@ -175,15 +178,17 @@ const fillCategories = (products, categoryList) => {
 // On filtre les produits
 // ------------------------------------------
 
-const filterProducts = (searchItem, category, categoryList) => {
+const filterAndListProducts = () => {
   let filtered = myProducts;
 
-  if (category) {
-    filtered = filtered.filter((product) => product.category === category);
+  if (filters.category) {
+    filtered = filtered.filter(
+      (product) => product.category === filters.category
+    );
   }
 
-  if (searchItem) {
-    const lowerCaseSearchItem = searchItem.toLowerCase();
+  if (filters.searchTerm) {
+    const lowerCaseSearchItem = filters.searchTerm.toLowerCase();
     filtered = filtered.filter(
       (product) =>
         product.name.toLowerCase().includes(lowerCaseSearchItem) ||
@@ -195,32 +200,26 @@ const filterProducts = (searchItem, category, categoryList) => {
 };
 
 // ------------------------------------------
-
-// ------------------------------------------
 // On initialise les événements
 // ------------------------------------------
 
 const setupEventListeners = () => {
-  const filterButton = document.getElementById("filter-button");
-  const categoryList = document.getElementById("category-list");
-
   filterButton.addEventListener("click", () => {
     categoryList.classList.toggle("visible");
   });
 
   categoryList.addEventListener("click", (e) => {
     if (e.target.classList.contains("list-option")) {
-      const selectedCategory = e.target.dataset.category;
+      filters.category = e.target.dataset.category;
       categoryList.classList.remove("visible");
-      filterProducts(searchBar.value, selectedCategory, categoryList);
+      filterAndListProducts();
     }
   });
 
   searchBar.addEventListener("input", (e) => {
-    filterProducts(e.target.value, "", categoryList);
+    filters.searchTerm = e.target.value;
+    filterAndListProducts();
   });
-
-  fillCategories(myProducts, categoryList);
 };
 
 // ------------------------------------------
@@ -230,11 +229,12 @@ const setupEventListeners = () => {
 // ------------------------------------------
 
 const initializePage = async () => {
-  myProducts = await fetchMyProducts();
+  myProducts = await fetchAllProducts();
+  fillCategories(myProducts);
   setupEventListeners();
-  listProducts(myProducts);
+  filterAndListProducts();
+  updateCartCount();
 };
-
 // ------------------------------------------
 
 // ------------------------------------------
