@@ -3,8 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+
+    <!-- Description pour les moteurs de recherche -->
+    <meta
+      name="description"
+      content="Lupini : votre boutique d'objets électroniques. Découvrez notre sélection d'articles de qualité à des prix imbattables."
+    />
+
+    <!-- Liste de mots clé liés au contenu de la page -->
+
+    <meta
+      name="keywords"
+      content="Lupini, électronique, boutique, gadgets, high-tech, smartphones, casques, ordinateur"
+    />
+
+    <!-- Auteur du site -->
+
+    <meta name="author" content="Lupini Team" />
+
+    <!-- Détail du titre de la page lorsque partagé sur les réseaux-->
+
+    <meta property="og:title" content="Lupini - Objets électroniques" />
+
+    <!-- Fournit une description lorsque partagé sur les réseaux sociaux-->
+
+    <meta
+      property="og:description"
+      content="Découvrez le meilleur de la technologie sur Lupini."
+    />
+
+    <!-- Open Graph, image affichée lorsque le site est partagé sur les réseaux sociaux -->
+    <meta property="og:image" content="./assets/icon/boite-de-livraison.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Lupini - Objets électroniques</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/icon/boite-de-livraison.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <section id="logo-icon-header">
+        <h1 class="titrePageProduit">Lupini</h1>
+        <img
+          src="./assets/icon/boite-de-livraison.png"
+          alt="logo du site boite de livraison"
+          width="35"
+          height="35"
+        />
+      </section>
+
+      <section id="cart">
+        <img
+          src="assets/icon/accueil.png"
+          alt="retour à la page d'accueuil"
+          height="40"
+          width="40"
+        />
+
+        <a class="panier" href="cart.html" aria-label="redirection panier"
+          ><i class="fa-solid fa-cart-shopping" aria-label="panier d'achat"></i
+        ></a>
+      </section>
+    </header>
+
+    <main id="mainProduct">
+      <section
+        id="carteDétailProduit"
+        aria-label="emplacement avec détails du produit"
+      >
+        <img
+          class="imageProduct"
+          src="assets/icon/eco_logistique.png"
+          alt="photo du produit"
+          width="80%"
+          height="40%"
+        />
+        <div class="mediaqueries">
+          <div class="détails">
+            <p class="descriptionProduit">clavier mecanique</p>
+            <p class="descriptionProduit">
+              clavier mécanique compact avec switchs bleues
+            </p>
+            <p class="descriptionProduit">prix : 39,99e Stock : 11</p>
+            <p class="descriptionProduit">avis : 4.5/5</p>
+          </div>
+
+          <div class="quantité">
+            <div class="incrémentation">
+              <button class="bouttonIncrémentation">-</button
+              ><button class="bouttonIncrémentation">+</button>
+            </div>
+            <p class="quantitéProduit">1</p>
+            <button class="bouttonAjouterAuPanier">Ajouter au panier</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="logo-icon-footer">
+        <h1>Lupini</h1>
+        <img
+          src="./assets/icon/boite-de-livraison.png"
+          alt="logo du site boite de livraison"
+          width="35"
+          height="35"
+        />
+      </section>
+      <p>Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="./assets/js/pages/product.js"></script>
+  </body>
 </html>
